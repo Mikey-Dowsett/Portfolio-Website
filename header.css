@@ -1,0 +1,43 @@
+#header {
+    background-color: #403F4C;
+}
+
+#navelements {
+    background-color: #403F4C;
+    display: flex;
+    text-align: center;
+}
+
+.navbar {
+    margin-top: auto;
+    margin-bottom: auto;
+    float: left;
+    margin-left: 50px;
+}
+
+.navbar a{
+    color: #F4D6CC;
+    text-decoration: none;
+    padding-right: 10px;
+    
+}
+
+.externalnavbar {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.externalnavbar a {
+    padding-right: 10px;
+}
+
+h2 {
+    color: #F4D6CC;
+    margin-left: 50px;
+}
+
+img {
+    width: 25px;
+}
