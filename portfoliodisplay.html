@@ -3,14 +3,17 @@
     <head>
         <title>Home</title>
         <meta charset="utf-8">
-        <h3 class="name">Mikey Dowsett</h3>
-        <div class="menubar">
-            <nav>
-                <a href="HomePage.html">Home</a>
-                <a href="PortfolioPage.html">Portfolio</a>
-            </nav>
-        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+        <script>
+            $(function() {
+                $('#header').load('header.html')
+            });
+        </script>
     </head>
     <body>
+        <div id="header"></div>
+        <h4>This is my portfolio</h4>
     </body>
 </html>
