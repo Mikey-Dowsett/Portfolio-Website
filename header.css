@@ -33,15 +33,10 @@
 .externalnavbar {
     margin-left: auto;
     margin-right: 25px;
-    margin-top: -7.5px;
+    margin-top: 5px;
     margin-bottom: auto;
-    pointer-events: none;
-    transition: margin-top 0.5s;
 }
 
-.externalnavbar:hover {
-    margin-top: -7.5px;
-}
 
 #header h2 {
     text-align: left;
@@ -51,13 +46,15 @@
 }
 
 #header img {
-    position: static;
+    border-radius: 50%;
+    border-style: solid;
+    border-color:#2D2C33;
     width: 25px;
-    pointer-events: auto;
-    transition: width 0.5s, margin-top 0.5s;
+
+    transition: border-color 0.5s;
 }
 
 #header img:hover {
-    position:static;
-    width: 30px;
+    border-color: #EEEBE0;
 }
+
