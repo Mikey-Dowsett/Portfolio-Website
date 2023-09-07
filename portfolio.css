@@ -1,0 +1,29 @@
+body {
+    background-color: #0F0E11;
+    color: #EEEBE0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.portfolio {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.portfolio img {
+    width: 75%;
+    border-style: solid;
+    border-color: #2D2C33;
+
+    transition: border-color 0.5s;
+}
+
+.portfolio img:hover {
+    border-color: #EEEBE0;
+}
+
+.portfolio a {
+    text-decoration: none;
+    color:#EEEBE0;
+}
