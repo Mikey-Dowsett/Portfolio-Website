@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bouncy Ball</title>
+        <link rel="icon" href="Website Visuals/MikeyFace.jpg" type="image/ico">
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+        <script>
+            $(function() {
+                $('#header').load('header.html')
+            });
+            $(function(){
+                $('#footer').load('footer.html')
+            });
+        </script>
+        <link rel="stylesheet" href="projectpage.css">
+    </head>
+    <body>
+        <div id="header"></div>
+        <br>
+        <div id="projectface" style="background-image: url('Website Visuals/Bouncy-Ball-1.png');">            
+        </div>
+        <br>
+        <h1 id="title">Bouncy Ball</h1>
+        <div id="projectstats">
+            
+            <div id="toolsused">
+                <h2>Tools Used</h2>
+                <p>Unity, Aseprite</p>
+            </div>
+            <button onclick="window.location.href='https://silver-kiwi-games.itch.io/bouncy-ball';">Play Game</button>
+        </div>
+        <br>
+        <p id="description">
+            Bouncy Ball started out as an idea I wanted to make in one week. 
+            It turned out to be a lot more fun than I expected and took two weeks to make in the end. 
+            The gameplay is simple, fire the bouncy ball to collect all the collectables. 
+            During this project, I learned about Unity's rule tile system and got a much deeper understanding of the particle system.
+        </p>
+
+        <br>
+        <div id="projectgallery">
+            <img src="Website Visuals/Bouncy-Ball.gif">
+            <img src="Website Visuals/Bouncy-Ball-2.png">
+            <img src="Website Visuals/Bouncy-Ball-3.png">
+        </div>
+        <br>
+        <div id="footer"></div>
+    </body>
+</html>

@@ -14,11 +14,12 @@
     border-color:#2D2C33;
     width: 25px;
 
-    transition: border-color 0.5s;
+    transition: border-color 0.5s, transform 0.5s;
 }
 
 #footer img:hover {
     border-color:#EEEBE0;
+    transform: scale(1.5);
 }
 
 #footer a {

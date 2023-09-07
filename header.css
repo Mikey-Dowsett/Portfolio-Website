@@ -5,6 +5,10 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+html::-webkit-scrollbar {
+    display: none;
+}
+
 #navelements {
     background-color: #2D2C33;
     display: flex;
@@ -51,10 +55,12 @@
     border-style: solid;
     border-color:#2D2C33;
     width: 25px;
+    margin-left: -10px;
 
-    transition: border-color 0.5s;
+    transition: border-color 0.5s, transform 0.5s;
 }
 
 #header img:hover {
     border-color: #EEEBE0;
+    transform: scale(1.5);
 }

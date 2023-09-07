@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fight for Earth</title>
+        <link rel="icon" href="Website Visuals/MikeyFace.jpg" type="image/ico">
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+        <script>
+            $(function() {
+                $('#header').load('header.html')
+            });
+            $(function(){
+                $('#footer').load('footer.html')
+            });
+        </script>
+        <link rel="stylesheet" href="projectpage.css">
+    </head>
+    <body>
+        <div id="header"></div>
+        <br>
+        <div id="projectface" style="background-image: url('Website Visuals/Fight-For-Earth-1.png');">            
+        </div>
+        <br>
+        <h1 id="title">Fight for Earth</h1>
+        <div id="projectstats">
+            
+            <div id="toolsused">
+                <h2>Tools Used</h2>
+                <p>Unity, Aseprite</p>
+            </div>
+            <button onclick="window.location.href='https://silver-kiwi-games.itch.io/fight-for-earth';">Play Game</button>
+        </div>
+        <br>
+        <p id="description">
+            Fight for Earth was made in 7 days for the Brackeys Game Jam 2023.1 with the theme "An end is a new beginning". 
+            My game loosey fits this theme by starting you as a different character each time. 
+            It is a short wave-based shooter game where you have to kill incoming zombies until the timer runs out. 
+            When the game starts you are randomly given one of three possible gun types. 
+            As you kill zombies you gain XP to upgrade your character, with certain upgrades being better for each type. 
+            By completing this project I learned how to create an upgrade system that affects different stats while trying to keep the game balanced.
+        </p>
+
+        <br>
+        <div id="projectgallery">
+            <img src="Website Visuals/Fight-For-Earth.gif">
+            <img src="Website Visuals/Fight-For-Earth-2.png">
+            <img src="Website Visuals/Fight-For-Earth-3.png">
+        </div>
+        <br>
+        <div id="footer"></div>
+    </body>
+</html>
