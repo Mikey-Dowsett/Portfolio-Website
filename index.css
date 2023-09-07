@@ -10,6 +10,7 @@ html {
     padding-top: 20px;
     display: flex;
     text-align: center;
+    font-size:xx-large;
 }
 
 .homeintro div {
@@ -17,6 +18,7 @@ html {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    max-width: 40%;
 }
 
 .homeintro img {
@@ -32,6 +34,7 @@ html {
 .projectdisplay {
     width: 100%;
     display: flex;
+    padding-bottom: 20px;
 }
 
 .projectdisplay div {
@@ -39,15 +42,18 @@ html {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    max-width: 200px;
+    max-width: 40%;
+}
+
+.projectdisplay a {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .projectdisplay img {
     border-radius: 50%;
     border-style: solid;
     border-color: #EEEBE0;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
 }

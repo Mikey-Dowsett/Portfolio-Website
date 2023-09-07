@@ -1,0 +1,29 @@
+#footer {
+    background-color: #2D2C33;
+    color: #EEEBE0;
+    text-align: center;
+    height: 90px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#footer img {
+    width: 25px;
+    pointer-events: auto;
+}
+
+#footer img:hover {
+    width: 30px;
+}
+
+#footer p {
+    padding-bottom: 10px;
+}
+
+.externalnavbar {
+    padding-top: 15px;
+    pointer-events: none;
+}
+
+.externalnavbar:hover {
+    padding-top: 10px;
+}
