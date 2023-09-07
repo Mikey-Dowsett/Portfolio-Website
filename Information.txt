@@ -1,4 +1,5 @@
 Color Palette:
-    #403F4C Onxy
-    #E84855 Red
-    #F4D6CC Dogwood
+    #0F0E11 Dark Grey
+    #2D2C33 Light Grey
+    #EEEBE0 White
+    #BB3030 Red
