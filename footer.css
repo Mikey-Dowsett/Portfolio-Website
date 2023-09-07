@@ -3,27 +3,36 @@
     color: #EEEBE0;
     text-align: center;
     height: 90px;
+    width: 100%;
     font-family: 'Courier New', Courier, monospace;
 }
 
 #footer img {
+    margin-bottom: 7.5px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color:#2D2C33;
     width: 25px;
-    pointer-events: auto;
+
+    transition: border-color 0.5s;
 }
 
 #footer img:hover {
-    width: 30px;
+    border-color:#EEEBE0;
 }
 
-#footer p {
+#footer a {
+    text-decoration: none;
     padding-bottom: 10px;
+    color:#EEEBE0;
+
+    transition: color 0.5s;
 }
 
-.externalnavbar {
+#footer a:hover {
+    color: #BB3030;
+}
+
+#footer .externalnavbar {
     padding-top: 15px;
-    pointer-events: none;
-}
-
-.externalnavbar:hover {
-    padding-top: 10px;
 }
