@@ -19,13 +19,14 @@
     margin-left: 50px;
 }
 
-a {
+#header a {
     color: #EEEBE0;
     text-decoration: none;
     padding-right: 10px;
+    transition: color 0.5s;
 }
 
-a:hover {
+#header a:hover {
     color: #BB3030;
 }
 
@@ -35,6 +36,11 @@ a:hover {
     margin-top: -7.5px;
     margin-bottom: auto;
     pointer-events: none;
+    transition: margin-top 0.5s;
+}
+
+.externalnavbar:hover {
+    margin-top: -7.5px;
 }
 
 #header h2 {
@@ -45,10 +51,13 @@ a:hover {
 }
 
 #header img {
+    position: static;
     width: 25px;
     pointer-events: auto;
+    transition: width 0.5s, margin-top 0.5s;
 }
 
 #header img:hover {
+    position:static;
     width: 30px;
 }
