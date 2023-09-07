@@ -22,13 +22,29 @@ html {
 }
 
 .homeintro img {
+    background-position: center;
+    background-repeat:no-repeat;
+    background-image: url("Website Visuals/MikeyAlley.jpg");
     border-radius: 50%;
     border-style: solid;
-    border-color: #EEEBE0;
+    border-color: #2D2C33;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+
+    max-width: 50%;
+    /* width: 50%; */
+    height: 100%;
+    padding: 250px;
+
+    transition: background-image 0.25s ease-in-out;
+}
+
+.homeintro img:hover {
+    background-position: center;
+    background-repeat:no-repeat;
+    background-image: url("Website Visuals/MikeyBike.jpg");
 }
 
 .projectdisplay {
@@ -55,10 +71,15 @@ html {
 .projectdisplay img {
     border-radius: 50%;
     border-style: solid;
-    border-color: #EEEBE0;
-    transition: border-radius 0.5s;
+    border-color: #2D2C33;
+    transition: border-color 0.5s;
 }
 
 .projectdisplay img:hover {
-    border-radius: 40%;
+    border-color: #EEEBE0;
 }
+
+/* .minidisplay {
+    background-color: #2D2C33;
+    height: 50px;
+} */

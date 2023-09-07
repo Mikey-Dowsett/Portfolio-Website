@@ -1,4 +1,12 @@
-<div id="footer">
+<div id="footer" class="no-transition">
+    <script>
+        function transitionAfterPageLoad() {
+            document.getElementById("body").classList.remove("no-transition");
+        }
+        (function() {
+            transitionAfterPageLoad();
+        })()
+    </script>
     <link rel="stylesheet" href="footer.css">
     <div class="footerelements">
         <nav class="externalnavbar">
