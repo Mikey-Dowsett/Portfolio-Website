@@ -39,6 +39,7 @@ html {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    max-width: 200px;
 }
 
 .projectdisplay img {
