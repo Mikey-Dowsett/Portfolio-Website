@@ -4,6 +4,12 @@ html {
     color: #EEEBE0;
     display: flex;
     text-align: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 .homeintro {
