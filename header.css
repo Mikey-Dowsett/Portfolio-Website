@@ -44,6 +44,7 @@ html::-webkit-scrollbar {
 
 
 #header h2 {
+    pointer-events: none;
     text-align: left;
     margin-left: 20px;
 }
@@ -92,14 +93,15 @@ html::-webkit-scrollbar {
     font-family: 'Courier New', Courier, monospace;
     font-size: 100%;
     border: none;
-    border-radius: 25px;
+    border-radius: 10px;
     background-color: #EEEBE0;
 
-    transition: background-color 0.5s, transform 0.5s;
+    transition: background-color 0.5s, transform 0.5s, color 0.5s;
 }
 
 #banner button:hover {
     background-color: #BB3030;
+    color: #EEEBE0;
     transform: scale(1.1);
     cursor: pointer;
 }

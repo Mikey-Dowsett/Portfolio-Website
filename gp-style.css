@@ -26,6 +26,7 @@ body {
 #projectstats button {
     font-family: 'Courier New', Courier, monospace;
     font-size: 150%;
+    font-weight: bold;
     border: none;
     border-radius: 25px;
     background-color: #EEEBE0;
@@ -34,11 +35,12 @@ body {
     margin-right: 50px;
     width: 25%;
 
-    transition: background-color 0.5s, transform 0.5s;
+    transition: background-color 0.5s, transform 0.5s, color 0.5s;
 }
 
 #projectstats button:hover {
     background-color: #BB3030;
+    color: #EEEBE0;
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -76,9 +78,4 @@ body {
     margin-bottom: auto;
 
     transition: transform 0.5s, border-color 0.5s;
-}
-
-#projectgallery img:hover {
-    transform: scale(1.1);
-    border-color: #EEEBE0;
 }

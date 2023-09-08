@@ -34,7 +34,6 @@ html {
     margin-right: auto;
 
     max-width: 50%;
-    /* width: 50%; */
     height: 100%;
     padding: 250px;
 
@@ -51,17 +50,19 @@ html {
     font-family: 'Courier New', Courier, monospace;
     font-size: 100%;
     border: none;
-    border-radius: 25px;
+    border-radius: 15px;
+    padding: 10px;
     background-color: #EEEBE0;
 
     min-height: 50px;
 
 
-    transition: background-color 0.5s, transform 0.5s;
+    transition: background-color 0.5s, transform 0.5s, color 0.5s;
 }
 
 #homebutton:hover {
     background-color: #BB3030;
+    color:#EEEBE0;
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -81,26 +82,48 @@ html {
     max-width: 40%;
 }
 
-.projectdisplay a {
+.projectdisplay img {
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-}
-
-.projectdisplay img {
     border-radius: 50%;
     border-style: solid;
     border-color: #2D2C33;
-    transition: border-color 0.5s, transform 0.5s;
+    max-width: 50%;
+    height: 100%;
+    padding: 250px;
+
+    background-image: url("Website Visuals/Itch-Page.png");
+    transition: background-image 0.5s;
+
 }
 
 .projectdisplay img:hover {
-    border-color: #EEEBE0;
-    transform: scale(1.1)
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-image: url("Website Visuals/Farmers-Apocalypse-1.png");
 }
 
+.homeintro h1 {
+    pointer-events: none;
+}
 
+.homeintro p {
+    pointer-events: none;
+}
+
+.projectdisplay h2 {
+    pointer-events: none;
+}
+
+.projectdisplay p {
+    pointer-events: none;
+}
 
 .gallery {
     display: grid;

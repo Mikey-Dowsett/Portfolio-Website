@@ -1,15 +1,30 @@
 <div id="header">
-    
+    <script>
+        var homePage = document.getElementById("homepage");
+        if(homePage.href === window.location.href) {
+            homePage.style.textDecoration = "underline 2px";
+            homePage.style.pointerEvents = "none"
+        }
+
+        var portfolioPage = document.getElementById("portfoliopage");
+        if(portfolioPage.href === window.location.href) {
+            portfolioPage.style.textDecoration = "underline 2px";
+            portfolioPage.style.pointerEvents = "none"
+        }
+        
+    </script>
     <link rel="stylesheet" href="header.css">
     <div id="banner">
         <img src="Website Visuals/MikeyFace.jpg">
-        <a href="index.html"><h2>Mikey Dowsett</h2></a>
-        <button onclick="location.href='mailto:mikeydowsett@gmail.com';">Contact Me</button>
+        <h2>Mikey Dowsett</h2>
+        <button onclick="location.href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#105;&#107;&#101;&#121;&#100;&#111;&#119;&#115;&#101;&#116;&#116;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;?subject=Portfolio Contact'">
+            Contact Me
+        </button>
     </div>
     <div id="navelements">
         <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html" id="homepage">Home</a>
+            <a href="portfolio.html" id="portfoliopage">Portfolio</a>
         </nav>
         <nav class="externalnavbar">
             <a href="https://silver-kiwi-games.itch.io/">
