@@ -45,12 +45,10 @@ html::-webkit-scrollbar {
 
 #header h2 {
     text-align: left;
-    margin-left: 45px;
-    padding-top: 10px;
-    height: 0px;
+    margin-left: 20px;
 }
 
-#header img {
+.externalnavbar img {
     border-radius: 50%;
     border-style: solid;
     border-color:#2D2C33;
@@ -60,7 +58,48 @@ html::-webkit-scrollbar {
     transition: border-color 0.5s, transform 0.5s;
 }
 
-#header img:hover {
+.externalnavbar img:hover {
     border-color: #EEEBE0;
     transform: scale(1.5);
+}
+
+#banner {
+    display: flex;
+}
+
+#banner img {
+    margin-left: 42.5px;
+    width: 45px;
+    height: 45px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 50%;
+}
+
+#banner a {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#banner button {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 30px;
+    width: 125px;
+    height: 34px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    border: none;
+    border-radius: 25px;
+    background-color: #EEEBE0;
+
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+#banner button:hover {
+    background-color: #BB3030;
+    transform: scale(1.1);
+    cursor: pointer;
 }

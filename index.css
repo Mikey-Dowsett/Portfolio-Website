@@ -47,10 +47,30 @@ html {
     background-image: url("Website Visuals/MikeyBike.jpg");
 }
 
+#homebutton {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    border: none;
+    border-radius: 25px;
+    background-color: #EEEBE0;
+
+    min-height: 50px;
+
+
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+#homebutton:hover {
+    background-color: #BB3030;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .projectdisplay {
     width: 100%;
     display: flex;
     padding-bottom: 20px;
+    font-size: larger;
 }
 
 .projectdisplay div {
@@ -79,6 +99,8 @@ html {
     border-color: #EEEBE0;
     transform: scale(1.1)
 }
+
+
 
 .gallery {
     display: grid;

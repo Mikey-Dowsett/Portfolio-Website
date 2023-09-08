@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mahara</title>
+        <link rel="icon" href="Website Visuals/MikeyFace.jpg" type="image/ico">
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+        <script>
+            $(function() {
+                $('#header').load('header.html')
+            });
+            $(function(){
+                $('#footer').load('footer.html')
+            });
+        </script>
+        <link rel="stylesheet" href="gp-style.css">
+    </head>
+    <body>
+        <div id="header"></div>
+        <br>
+        <div id="projectface" style="background-image: url('Website Visuals/Mahara-1.png');">            
+        </div>
+        <br>
+        <h1 id="title">Mahara</h1>
+        <div id="projectstats">
+            
+            <div id="toolsused">
+                <h2>Tools Used</h2>
+                <p>Unity, Aseprite, BFXR, Bosca Ceoil</p>
+            </div>
+            <button onclick="window.location.href='https://silver-kiwi-games.itch.io/mahara';">Play Game</button>
+        </div>
+        <br>
+        <p id="description">
+            Mahara was made in three days for the MashUp Game Jam 2 with the theme "Unconventional Means". 
+            This was my first game jam so I decided to keep it simple by making a platformer. 
+            I had the game fit the theme by switching the gravity instead of jumping. 
+            I also created floors you can't touch, enemies that walk back and forth, and an enemy that shoots projectiles. 
+            While the game mechanics had potential, I was still new to making games without following tutorials at the time, so the difficulty was very inconsistent. 
+            The sounds aren't very good and don't fit with the art style. 
+            The art is also inconsistent with itself, the player is far more detailed than the environment, and the background isn't even pixel art. 
+            I learned a lot from the game though, especially about planning games and making them quickly.
+        </p>
+
+        <br>
+        <div id="projectgallery">
+            <img src="Website Visuals/Mahara.gif">
+            <img src="Website Visuals/Mahara-2.png">
+            <img src="Website Visuals/Mahara-3.png">
+        </div>
+        <br>
+        <div id="footer"></div>
+    </body>
+</html>

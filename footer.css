@@ -1,14 +1,23 @@
 #footer {
     background-color: #2D2C33;
     color: #EEEBE0;
-    text-align: center;
-    height: 90px;
+    height: 50px;
     width: 100%;
     font-family: 'Courier New', Courier, monospace;
 }
 
+.footerelements{
+    display: flex;
+    text-align: center;
+}
+
+.externalnavbar {
+    margin-left: auto;
+    margin-right: 30px;
+}
+
 #footer img {
-    margin-bottom: 7.5px;
+    margin-top: 10px;
     border-radius: 50%;
     border-style: solid;
     border-color:#2D2C33;
@@ -24,16 +33,27 @@
 
 #footer a {
     text-decoration: none;
-    padding-bottom: 10px;
-    color:#EEEBE0;
-
-    transition: color 0.5s;
+    padding-right: 10px;
 }
 
-#footer a:hover {
-    color: #BB3030;
+#footer button {
+    margin-top: 7.5px;
+    margin-bottom: auto;
+    margin-left: 35px;
+    width: 150px;
+    height: 34px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    border: none;
+    border-radius: 25px;
+    background-color: #EEEBE0;
+
+    transition: background-color 0.5s, transform 0.5s;
 }
 
-#footer .externalnavbar {
-    padding-top: 15px;
+#footer button:hover {
+    background-color: #BB3030;
+    transform: scale(1.1);
+    cursor: pointer;
 }

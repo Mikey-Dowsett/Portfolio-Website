@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Math Sweeper</title>
+        <link rel="icon" href="Website Visuals/MikeyFace.jpg" type="image/ico">
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+        <script>
+            $(function() {
+                $('#header').load('header.html')
+            });
+            $(function(){
+                $('#footer').load('footer.html')
+            });
+        </script>
+        <link rel="stylesheet" href="gp-style.css">
+    </head>
+    <body>
+        <div id="header"></div>
+        <br>
+        <div id="projectface" style="background-image: url('Website Visuals/Math-Sweeper-1.png');">            
+        </div>
+        <br>
+        <h1 id="title">Math Sweeper</h1>
+        <div id="projectstats">
+            
+            <div id="toolsused">
+                <h2>Tools Used</h2>
+                <p>Unity, Aseprite</p>
+            </div>
+            <button onclick="window.location.href='https://silver-kiwi-games.itch.io/mathsweeper';">Play Game</button>
+        </div>
+        <br>
+        <p id="description">
+            Math Sweeper started as an attempt to recreate the original minesweeper. 
+            I created a randomly generating system that creates a certain amount of bombs when the player clicks their first tile, ensuring they always get one free tile. 
+            Once I had the main system done and working exactly like the original minesweeper I decided to add my own spin to it. 
+            I decided to give the player a chance to keep playing when they clicked a bomb. All they had to do was solve a math problem. 
+            Then I created a difficulty system off of that where each difficulty added more bombs and made the math harder by using bigger numbers.
+        </p>
+
+        <br>
+        <div id="projectgallery">
+            <img src="Website Visuals/Math-Sweeper.gif">
+            <img src="Website Visuals/Math-Sweeper-2.png">
+            <img src="Website Visuals/Math-Sweeper-3.png">
+        </div>
+        <br>
+        <div id="footer"></div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Greek Brawl</title>
+        <link rel="icon" href="Website Visuals/MikeyFace.jpg" type="image/ico">
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+        <script>
+            $(function() {
+                $('#header').load('header.html')
+            });
+            $(function(){
+                $('#footer').load('footer.html')
+            });
+        </script>
+        <link rel="stylesheet" href="gp-style.css">
+    </head>
+    <body>
+        <div id="header"></div>
+        <br>
+        <div id="projectface" style="background-image: url('Website Visuals/Greek-Brawl-1.png');">            
+        </div>
+        <br>
+        <h1 id="title">Greek Brawl</h1>
+        <div id="projectstats">
+            
+            <div id="toolsused">
+                <h2>Tools Used</h2>
+                <p>Unity, Aseprite</p>
+            </div>
+            <button onclick="window.location.href='https://silver-kiwi-games.itch.io/greek-brawl';">Play Game</button>
+        </div>
+        <br>
+        <p id="description">
+            Greek Brawl was my attempt at a simple turn-based game. At the start of the game, the player and AI are given four randomly selected characters. 
+            The player plays as the gods, while the AI plays as monsters. Each character has attack damage, an accuracy chance, and a special ability. 
+            The special ability is charged up by attacking and getting hit. 
+            Each character also falls into one of six classes, each one of which does critical damage to another class. 
+            My main focus while working on this project was the systems, creating the AI for the enemy to give it a good chance of winning. 
+            As well as the turn-based system that kept track of all the characters. 
+            The art and sound effects did not match up well, and the UI was very clunky. 
+            This project was much more of a technical piece than a visual and it shows.
+        </p>
+
+        <br>
+        <div id="projectgallery">
+            <img src="Website Visuals/Greek-Brawl-2.png">
+            <img src="Website Visuals/Greek-Brawl-3.png">
+            <img src="Website Visuals/Greek-Brawl.gif">
+        </div>
+        <br>
+        <div id="footer"></div>
+    </body>
+</html>

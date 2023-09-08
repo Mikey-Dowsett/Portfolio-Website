@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Drillers</title>
+        <link rel="icon" href="Website Visuals/MikeyFace.jpg" type="image/ico">
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+        <script>
+            $(function() {
+                $('#header').load('header.html')
+            });
+            $(function(){
+                $('#footer').load('footer.html')
+            });
+        </script>
+        <link rel="stylesheet" href="gp-style.css">
+    </head>
+    <body>
+        <div id="header"></div>
+        <br>
+        <div id="projectface" style="background-image: url('Website Visuals/The-Drillesr-1.png');">            
+        </div>
+        <br>
+        <h1 id="title">The Drillers</h1>
+        <div id="projectstats">
+            
+            <div id="toolsused">
+                <h2>Tools Used</h2>
+                <p>Unity, Aseprite, BFXR</p>
+            </div>
+            <button onclick="window.location.href='https://silver-kiwi-games.itch.io/the-drillers';">Play Game</button>
+        </div>
+        <br>
+        <p id="description">
+            The Drillers was a small game I made inspired by the gameplay of Dome Keeper. 
+            The objective of the game is to dig deeper and deeper harvesting rare and valuable gems. 
+            The player can then sell the gems to upgrade themselves and unlock deeper layers. 
+            It's a very simple game, but I tried to create a more distinct look for the game with post-processing. 
+            I used Grain and Panini Projection to give the game a more retro feel that works with pixel art and 8-bit sound effects. 
+            I also tried to create a more immersive environment by adding rain to the surface that gets quieter the deeper you dig.
+        </p>
+
+        <br>
+        <div id="projectgallery">
+            <img src="Website Visuals/The Drillers.gif">
+            <img src="Website Visuals/The-Drillesr-2.png">
+            <img src="Website Visuals/The-Drillesr-3.png">
+        </div>
+        <br>
+        <div id="footer"></div>
+    </body>
+</html>

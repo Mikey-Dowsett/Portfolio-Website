@@ -35,3 +35,16 @@ html {
     margin-left: 15%;
     margin-right: auto;
 }
+
+.portfolio a {
+    text-decoration: none;
+}
+
+.portfolio a h2 {
+    color: #EEEBE0;
+    transition: color 0.5s;
+}
+
+.portfolio a h2:hover {
+    color: #BB3030;
+}
