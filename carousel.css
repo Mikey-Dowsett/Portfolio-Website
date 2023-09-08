@@ -1,0 +1,41 @@
+/* external css: flickity.css */
+
+.gallery {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    background: #0F0E11;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.gallery-cell {
+    width: 25%;
+    min-height: 300px;
+    margin-right: 10px;
+    background: #8C8;
+    background-position: center;
+    background-size: cover;
+    border-style: solid;
+    border-color: #0F0E11;
+
+    transition: border-color 0.5s;
+}
+
+.gallery-cell:hover {
+    border-color: #EEEBE0;
+}
+
+
+.gallery a {
+    padding-top: 5px;
+    font-size: 300%;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #EEEBE0;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #0F0E11;
+}
+
+.flickity-page-dots .dot{
+    background-color: #EEEBE0;
+}
