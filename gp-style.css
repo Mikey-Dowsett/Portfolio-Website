@@ -80,7 +80,7 @@ body {
     transition: transform 0.5s, border-color 0.5s;
 }
 
-h2 {
+#carouseltitle {
     margin-left: 45px;
     font-size: 200%;
 }
