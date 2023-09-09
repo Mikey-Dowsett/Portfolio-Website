@@ -1,11 +1,17 @@
 <div class="carousel">
-    <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
     <script src="unpkg.com_flickity@2.3.0_dist_flickity.pkgd.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
     <link rel="stylesheet" href="unpkg.com_flickity@2.3.0_dist_flickity.css">
     <link rel="stylesheet" href="carousel.css">
 
-        <!-- Add the background images in css, give each cell its own id? -->
+    <script>
+        var $carousel = $('.gallery js-flickity').flickity();
+        addEventListener("load", (event) => {});
+
+        onload = (event) => {
+            $carousel.flickity('resize');
+        };
+    </script>
+
     <div class="gallery js-flickity" data-flickity-options='{"wrapAround": true, "autoPlay": 2000}'>
         <a class="gallery-cell" id="cell1" href="gp-bouncyball.html">
             <div>Bouncy Ball</div>
