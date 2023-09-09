@@ -48,3 +48,9 @@ html {
 .portfolio a h2:hover {
     color: #BB3030;
 }
+
+#description {
+    pointer-events: none;
+    max-width: 60%;
+    margin-left: 3%;
+}

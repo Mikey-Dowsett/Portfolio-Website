@@ -15,6 +15,7 @@ body {
 }
 
 #title {
+    pointer-events: none;
     font-size: 400%;
     margin-left: 50px;
 }
@@ -46,16 +47,26 @@ body {
 }
 
 #toolsused {
+    pointer-events: none;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 50px;
 }
 
+#toolsused section {
+    display: flex;
+}
+
+#toolsused div {
+    padding-right: 40px;
+}
+
 #description {
+    pointer-events: none;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 50px;
-    max-width: 40%;
+    max-width: 60%;
 }
 
 #projectgallery {
@@ -81,6 +92,7 @@ body {
 }
 
 #carouseltitle {
+    pointer-events: none;
     margin-left: 45px;
     font-size: 200%;
 }
