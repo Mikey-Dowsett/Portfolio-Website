@@ -198,16 +198,12 @@ html {
         pointer-events: none;
         transform: scale(0.8);
         margin: auto;
-        text-align: center;
     }
 
     .projectdisplay {
         display: block;
         -webkit-transform:  rotate(180deg);
         transform:  rotate(180deg);
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 90%;
     }
 
     .projectdisplay div {
@@ -222,7 +218,6 @@ html {
         -webkit-transform: scale(0.8) rotate(180);
         transform: scale(0.8) rotate(0.5turn);
         margin: auto;
-        text-align: center;
     }
 
     .projectdisplay button {
