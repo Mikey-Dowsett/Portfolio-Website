@@ -17,7 +17,7 @@ body {
 #title {
     pointer-events: none;
     font-size: 400%;
-    margin-left: 50px;
+    margin-left: 45px;
 }
 
 #projectstats {
@@ -96,3 +96,44 @@ body {
     margin-left: 45px;
     font-size: 200%;
 }
+
+@media (max-width: 800px) {
+    #projectstats {
+        display: block;
+    }
+
+    #projectstats button {
+        margin-left: 45px;
+        width: 35%;
+        padding: 15px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #toolsused section {
+        display: block;
+    }
+
+    #description {
+        max-width: 80%;
+    }
+
+    #projectgallery {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: -10px;
+        row-gap: 20px;
+    }
+
+    #projectgallery img {
+        max-width: 90%;
+    }
+
+    #carouseltitle {
+        display: none;
+    }
+
+    #carousel {
+        display: none;
+    }
+}
+
