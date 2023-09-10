@@ -2,7 +2,6 @@ html {
     font-family: 'Courier New', Courier, monospace;
     background-color: #0F0E11;
     color: #EEEBE0;
-    display: flex;
     text-align: center;
 }
 
@@ -17,23 +16,19 @@ html {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    max-width: 40%;
+    max-width: 50%;
 }
 
 .homeintro img {
     background-position: center;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-image: url("Website Visuals/MikeyAlley.jpg");
     border-radius: 50%;
     border-style: solid;
     border-color: #2D2C33;
-    margin-top: auto;
-    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
 
-    max-width: 50%;
-    height: 100%;
     padding: 250px;
 
     transition: background-image 0.25s ease-in-out;
@@ -184,20 +179,26 @@ html {
 @media screen and (max-width: 800px) {
     .homeintro {
         display: block;
-        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .homeintro div {
         max-width: 90%;
     }
+
     .homeintro img {
         pointer-events: none;
+        transform: scale(0.8);
     }
 
     .projectdisplay {
         display: block;
         -webkit-transform:  rotate(180deg);
         transform:  rotate(180deg);
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
     }
 
     .projectdisplay div {
@@ -208,11 +209,11 @@ html {
     }
 
     .projectdisplay img {
-        -webkit-transform: rotate(-180deg);
-        transform: rotate(-180deg);
+        /* -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg); */
         pointer-events: none;
-        -webkit-transform: scale(0.9) rotate(180);
-        transform: scale(0.9) rotate(180);
+        -webkit-transform: scale(0.8) rotate(180);
+        transform: scale(0.8) rotate(0.5turn);
     }
 
     .projectdisplay button {
