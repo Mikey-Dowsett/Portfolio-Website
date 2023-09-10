@@ -182,6 +182,9 @@ html {
 }
 
 @media screen and (max-width: 800px) {
+    html {
+        max-width: 100%;
+    }
     .homeintro {
         display: block;
     }
