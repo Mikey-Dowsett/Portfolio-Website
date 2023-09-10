@@ -99,7 +99,7 @@ body {
 
 @media screen and (max-width: 800px) {
     #title {
-        margin-left: 20px;
+        margin-left: 15px;
     }
     #projectstats {
         display: block;

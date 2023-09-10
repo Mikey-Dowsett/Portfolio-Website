@@ -59,6 +59,41 @@
     cursor: pointer;
 }
 
+#footer .tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+#footer .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: #EEEBE0;
+    color: #0F0E11;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+#footer .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #EEEBE0 transparent transparent transparent;
+}
+
+#footer .tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
 @media screen and (max-width: 800px) {
     #footer .externalnavbar {
         margin-right: 0px;

@@ -62,9 +62,8 @@ html {
 }
 
 .projectdisplay {
-    width: 100%;
-    display: flex;
     padding-bottom: 20px;
+    display: flex;
     font-size: larger;
 }
 
@@ -73,25 +72,25 @@ html {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    max-width: 40%;
+    max-width: 50%;
+}
+
+.projectdisplay a {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .projectdisplay img {
     background-position: center;
     background-repeat:no-repeat;
+    background-image: url("Website Visuals/Itch-Page.png");
     background-size: cover;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 50%;
     border-style: solid;
     border-color: #2D2C33;
-    max-width: 50%;
-    height: 100%;
+
     padding: 250px;
 
-    background-image: url("Website Visuals/Itch-Page.png");
     transition: background-image 0.5s;
 
 }
