@@ -190,8 +190,10 @@ html {
         max-width: 90%;
     }
     .homeintro img {
-        max-width: 90%;
+        max-width: 75%;
         pointer-events: none;
+        margin-left: auto;
+        margin-left: auto;
     }
 
     .projectdisplay {
@@ -208,7 +210,9 @@ html {
     }
 
     .projectdisplay img {
-        max-width: 90%;
+        max-width: 75%;
+        margin-left: auto;
+        margin-left: auto;
         -webkit-transform: rotate(-180deg);
         transform: rotate(-180deg);
         pointer-events: none;
