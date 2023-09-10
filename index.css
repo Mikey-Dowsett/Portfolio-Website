@@ -182,11 +182,9 @@ html {
 }
 
 @media screen and (max-width: 800px) {
-    html {
-        max-width: 100%;
-    }
     .homeintro {
         display: block;
+        width: 100%;
     }
 
     .homeintro div {
@@ -194,8 +192,6 @@ html {
     }
     .homeintro img {
         pointer-events: none;
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
     }
 
     .projectdisplay {
