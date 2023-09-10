@@ -2,7 +2,7 @@
     background-color: #2D2C33;
     color: #EEEBE0;
     height: 50px;
-    width: 100%;
+    max-width: 100%;
     font-family: 'Courier New', Courier, monospace;
 }
 
