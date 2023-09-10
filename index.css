@@ -179,6 +179,8 @@ html {
 @media screen and (max-width: 800px) {
     html {
         max-width: 100%;
+        overflow-x: hidden;
+        text-align: center;
     }
     .homeintro {
         display: block;
@@ -199,7 +201,6 @@ html {
 
     .projectdisplay {
         display: block;
-        text-align: center;
         -webkit-transform:  rotate(180deg);
         transform:  rotate(180deg);
         margin-left: auto;
