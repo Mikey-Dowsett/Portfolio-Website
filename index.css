@@ -198,6 +198,7 @@ html {
         pointer-events: none;
         transform: scale(0.8);
         margin: auto;
+        text-align: center;
     }
 
     .projectdisplay {
@@ -221,6 +222,7 @@ html {
         -webkit-transform: scale(0.8) rotate(180);
         transform: scale(0.8) rotate(0.5turn);
         margin: auto;
+        text-align: center;
     }
 
     .projectdisplay button {
