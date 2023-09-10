@@ -6,12 +6,12 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-.footerelements{
+#footer .footerelements{
     display: flex;
     text-align: center;
 }
 
-.externalnavbar {
+#footer .externalnavbar {
     margin-left: auto;
     margin-right: 30px;
 }
@@ -57,4 +57,14 @@
     color: #EEEBE0;
     transform: scale(1.1);
     cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    #footer .externalnavbar {
+        margin-right: 0px;
+    }
+
+    #footer button {
+        margin-left: 10px;
+    }
 }
