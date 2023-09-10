@@ -181,10 +181,9 @@ html {
     grid-row-end: 7;
 }
 
-@media (max-width: 680px) {
+@media screen and (max-width: 800px) {
     .homeintro {
         display: block;
-        
     }
 
     .homeintro div {

@@ -55,7 +55,7 @@ html {
     margin-left: 3%;
 }
 
-@media (max-width: 800px) {
+@media screen and  (max-width: 800px) {
     #description {
         max-width: 90%;
     }
@@ -65,7 +65,7 @@ html {
     }
 }
 
-@media (max-width: 500px) {
+@media screen and  (max-width: 500px) {
     #description {
         max-width: 90%;
     }
