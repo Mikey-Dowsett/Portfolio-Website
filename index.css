@@ -190,6 +190,8 @@ html {
     .homeintro img {
         pointer-events: none;
         transform: scale(0.8);
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .projectdisplay {
@@ -209,11 +211,11 @@ html {
     }
 
     .projectdisplay img {
-        /* -webkit-transform: rotate(-180deg);
-        transform: rotate(-180deg); */
         pointer-events: none;
         -webkit-transform: scale(0.8) rotate(180);
         transform: scale(0.8) rotate(0.5turn);
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .projectdisplay button {
