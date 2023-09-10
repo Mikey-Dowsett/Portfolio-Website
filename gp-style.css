@@ -99,14 +99,14 @@ body {
 
 @media screen and (max-width: 800px) {
     #title {
-        margin-left: 30px;
+        margin-left: 20px;
     }
     #projectstats {
         display: block;
     }
 
     #projectstats button {
-        margin-left: 25px;
+        margin-left: 15px;
         width: 35%;
         padding: 15px;
         margin-top: 5px;
@@ -114,7 +114,7 @@ body {
     }
 
     #toolsused {
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     #toolsused section {
@@ -124,7 +124,7 @@ body {
 
     #description {
         max-width: 80%;
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     #projectgallery {
