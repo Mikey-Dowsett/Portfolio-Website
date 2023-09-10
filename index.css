@@ -125,7 +125,6 @@ html {
     grid-template-rows: repeat(5, 5vw);
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #2D2C33;
     background-image: linear-gradient(#0F0E11, #2D2C33, #0F0E11);
 }
 
@@ -216,7 +215,7 @@ html {
     }
 
     .projectdisplay img {
-        pointer-events: none;
+        /* pointer-events: none; */
         -webkit-transform: scale(0.8) rotate(180);
         transform: scale(0.8) rotate(0.5turn);
         margin: auto;
@@ -227,6 +226,10 @@ html {
     }
 
     .gallery {
-        display: none;
+        max-width: 100%;
+        display: inline-block;
+        grid-template-columns: unset;
+        grid-template-rows: unset;
+        background-image: linear-gradient(#0F0E11, #0F0E11);
     }
 }
