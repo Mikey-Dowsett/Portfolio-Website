@@ -191,6 +191,7 @@ html {
     }
     .homeintro img {
         pointer-events: none;
+        -webkit-transform: scale(0.9);
         transform: scale(0.9);
     }
 
@@ -208,10 +209,11 @@ html {
     }
 
     .projectdisplay img {
-        transform: scale(0.9);
         -webkit-transform: rotate(-180deg);
         transform: rotate(-180deg);
         pointer-events: none;
+        -webkit-transform: scale(0.9) rotate(180);
+        transform: scale(0.9) rotate(180);
     }
 
     .projectdisplay button {
