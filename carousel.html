@@ -7,11 +7,10 @@
         var $carousel = $('.gallery js-flickity').flickity();
         addEventListener("load", (event) => {
             $carousel.flickity('resize');
-            $carousel.flickity('reposition');
         });
     </script>
 
-    <div class="gallery js-flickity" data-flickity-options='{"wrapAround": true, "autoPlay": 2000}'>
+    <div class="gallery js-flickity" data-flickity-options='{"wrapAround": true, "autoPlay": 2000, "imagesLoaded": true}'>
         <a class="gallery-cell" id="cell1" href="gp-bouncyball.html">
             <div>Bouncy Ball</div>
         </a>
