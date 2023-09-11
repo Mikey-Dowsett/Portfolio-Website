@@ -220,6 +220,7 @@ html {
     }
 
     .projectdisplay img {
+        display: none;
         position: relative;
         /* pointer-events: none; */
         -webkit-transform: scale(0.8) rotate(180);
@@ -228,7 +229,8 @@ html {
     }
 
     .projectdisplay button {
-        margin-bottom: 25px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     .gallery {
