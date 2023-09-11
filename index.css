@@ -187,16 +187,18 @@ html {
         display: block;
         margin: auto;
         text-align: center;
+        padding: 0;
     }
 
     .homeintro div {
         max-width: 90%;
+        
     }
 
     .homeintro img {
         pointer-events: none;
         transform: scale(0.8);
-        margin: auto;
+        margin: 0 auto;
     }
 
     .projectdisplay {
@@ -204,6 +206,7 @@ html {
         -webkit-transform:  rotate(180deg);
         transform:  rotate(180deg);
         text-align: center;
+        padding: 0;
     }
 
     .projectdisplay div {
@@ -217,7 +220,7 @@ html {
         /* pointer-events: none; */
         -webkit-transform: scale(0.8) rotate(180);
         transform: scale(0.8) rotate(0.5turn);
-        margin: auto;
+        margin: 0 auto;
     }
 
     .projectdisplay button {
