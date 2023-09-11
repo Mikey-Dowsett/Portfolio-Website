@@ -197,10 +197,10 @@ html {
     }
 
     .homeintro img {
+        position: relative;
         pointer-events: none;
         transform: scale(0.8);
         margin: 0 auto;
-        padding: 0;
     }
 
     .projectdisplay {
@@ -220,11 +220,11 @@ html {
     }
 
     .projectdisplay img {
+        position: relative;
         /* pointer-events: none; */
         -webkit-transform: scale(0.8) rotate(180);
         transform: scale(0.8) rotate(0.5turn);
         margin: 0 auto;
-        padding: 0;
     }
 
     .projectdisplay button {
