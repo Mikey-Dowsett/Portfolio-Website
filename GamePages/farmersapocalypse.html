@@ -2,20 +2,24 @@
 <html lang="en">
     <head>
         <title>Farmers Apocalypse</title>
-        <link rel="icon" href="Website Visuals/MikeyFace.jpg" type="image/ico">
+        <link rel="icon" href="/Website Visuals/MikeyFace.jpg" type="image/ico">
         <meta charset="utf-8">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"></script>
         <script>
             $(function() {
-                $('#header').load('header.html')
+                $('#header').load('/header.html')
             });
             $(function(){
-                $('#carousel').load('carousel.html')
+                $('#carousel').load('/carousel.html')
             });
             $(function(){
-                $('#footer').load('footer.html')
+                $('#footer').load('/footer.html')
+            });
+            var $carousel = $('#carousel').flickity();
+            addEventListener("load", (event) => {
+                $carousel.flickity('resize');
             });
         </script>
         <link rel="stylesheet" href="gp-style.css">
@@ -23,7 +27,7 @@
     <body>
         <div id="header"></div>
         <br>
-        <div id="projectface" style="background-image: url('Website Visuals/Farmers-Apocalypse-1.png');">            
+        <div id="projectface" style="background-image: url('/Website Visuals/Farmers-Apocalypse-1.png');">            
         </div>
         <br>
         <h1 id="title">Farmers Apocalypse</h1>
@@ -53,9 +57,9 @@
 
         <br>
         <div id="projectgallery">
-            <img src="Website Visuals/Farmers-Apocalypse.gif">
-            <img src="Website Visuals/Farmers-Apocalypse-2.png">
-            <img src="Website Visuals/Farmers-Apocalypse-3.png">
+            <img src="/Website Visuals/Farmers-Apocalypse.gif">
+            <img src="/Website Visuals/Farmers-Apocalypse-2.png">
+            <img src="/Website Visuals/Farmers-Apocalypse-3.png">
         </div>
         <br>
         <h2 id="carouseltitle">Check Out My Other Games</h2>
