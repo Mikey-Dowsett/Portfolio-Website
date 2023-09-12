@@ -70,13 +70,13 @@ html {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 25%;
+    border-radius: 5%;
     border-style: solid;
     border-color: #2D2C33;
-    margin-left: auto;
+    margin-left: -5%;
     margin-right: auto;
 
-    padding: 200px;
+    padding: 175px;
     animation: images 10s infinite;
 }
 
