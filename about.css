@@ -41,11 +41,13 @@ html {
 #gallary {
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #gallary img {
     max-width: 25%;
-    padding: 300px;
+    padding: 15%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,6 +80,10 @@ html {
     #intro img { 
         margin-right: auto;
     }
+
+    #gallary img {
+        padding: 20%;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -96,5 +102,14 @@ html {
 
     #intro div {
         max-width: 80%;
+    }
+
+    #intro img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #gallary img {
+        padding: 40%;
     }
 }
