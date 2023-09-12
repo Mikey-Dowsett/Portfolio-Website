@@ -6,8 +6,8 @@
     <script>
         var $carousel = $('.gallery js-flickity').flickity();
         addEventListener("load", (event) => {
-            $carousel('resize');
-        });
+            $carousel.flickity('resize');
+        }, 500);
     </script>
 
     <div class="gallery js-flickity" data-flickity-options='{"wrapAround": true, "autoPlay": 2000, "imagesLoaded": true}'>
