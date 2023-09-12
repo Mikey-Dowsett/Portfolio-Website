@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" href="Website Visuals/MikeyFace.jpg" type="image/ico">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+        <script>
+            $(function() {
+                $('#header').load('header.html')
+            });
+            $(function(){
+                $('#footer').load('footer.html')
+            });
+        </script>
+        <link rel="stylesheet" href="/about.css">
+    </head>
+    <body>
+        <div id="header"></div>
+        <br>
+        <div id="intro">
+            <img>
+            <div>
+                <p>
+                    Hi, I’m Mikey Dowsett, a self-taught game developer and a computer information systems student from New Zealand. 
+                    I was born in Auckland, New Zealand, and I grew up in the United States. 
+                    Some of my hobbies include reading books, playing video games, and rock climbing.
+                    I love exploring new destinations and immersing myself in the diverse culture, cuisine, and scenery of different places. 
+                    One of the most memorable places I’ve visited is the Park of the Aqueducts in Rome, where I was able to walk under the incredible Aqueducts the Roman's built so long ago.
+                </p>
+                <p>    
+                    I’m currently studying computer information systems at Johnson County Community College to enhance my technical and business skills. 
+                    I enjoy making different kinds of games every time to challenge myself and learn new skills. 
+                    I love coding, designing, and testing my games until they are perfect.
+                    I’m always looking for new opportunities to improve my game development skills and share my work with others. 
+                </p>
+                <button onclick="location.href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#46;&#109;&#105;&#107;&#101;&#121;&#100;&#111;&#119;&#115;&#101;&#116;&#116;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;'" id="homebutton">Contact Me</button>
+            </div>
+        </div>
+        <div id="gallary">
+            <img style="background-image: url('/Website Visuals/MikeySittingRock.jpg');">
+            <img style="background-image: url('/Website Visuals/MikeyAquaducts.jpg')">
+            <img style="background-image: url('/Website Visuals/MikeyTopWorld.jpg')">
+        </div>
+        <div id="gallary">
+            <img style="background-image: url('/Website Visuals/MikeyCastle.jpg');">
+            <img style="background-image: url('/Website Visuals/MikeyTower.jpg')">
+            <img style="background-image: url('/Website Visuals/MikeyQueenstown.jpg')">
+        </div>
+        <br>
+        <div id="footer"></div>
+    </body>
+</html>

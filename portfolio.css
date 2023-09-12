@@ -50,14 +50,68 @@ html {
 }
 
 #description {
+    display: flex;
+    text-align: center;
     pointer-events: none;
-    max-width: 80%;
-    margin-left: 3%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#description div {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    max-width: 50%;
+}
+
+#description img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25%;
+    border-style: solid;
+    border-color: #2D2C33;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 200px;
+    animation: images 10s infinite;
+}
+
+@keyframes images {
+    0% {
+        background-image: url("/Website Visuals/BouncyBallLogo.png")
+    }
+    20% {
+        background-image: url("/Website Visuals/Zues-vs-Cyclops.png")
+    }
+    40% {
+        background-image: url("/Website Visuals/Dwarf Dash.png")
+    }
+    60% {
+        background-image: url("/Website Visuals/Mahara.png")
+    }
+    80% {
+        background-image: url("/Website Visuals/FarmersApocalypseLogo.png")
+    }
+    100% {
+        background-image: url("/Website Visuals/BouncyBallLogo.png")
+    }
 }
 
 @media screen and  (max-width: 800px) {
     .portfolio {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    #description img {
+        display: none;
+    }
+
+    #description div {
+        max-width: 90%;
     }
 }
 

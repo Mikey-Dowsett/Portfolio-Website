@@ -1,0 +1,100 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0F0E11;
+    color: #EEEBE0;
+    text-align: center;
+}
+
+#intro {
+    padding-top: 20px;
+    display: flex;
+    font-size: 130%;
+}
+
+#intro div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 45%;
+    text-align: left;
+}
+
+#intro img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/Website Visuals/MikeySeat.jpg");
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #2D2C33;
+    margin-left: auto;
+    margin-right: -150px;
+
+    max-height: 10px;
+    padding: 300px;
+}
+
+#intro p {
+    pointer-events: none;
+}
+
+#gallary {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#gallary img {
+    max-width: 25%;
+    padding: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-color: #2D2C33;
+}
+
+#homebutton {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #EEEBE0;
+
+    min-height: 50px;
+
+
+    transition: background-color 0.5s, transform 0.5s, color 0.5s;
+}
+
+#homebutton:hover {
+    background-color: #BB3030;
+    color:#EEEBE0;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1600px) {
+    #intro img { 
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        text-align: center;
+    }
+    body {
+        position: relative;
+    }
+
+    #intro {
+        display: block;
+    }
+
+    #intro div {
+        max-width: 80%;
+    }
+}

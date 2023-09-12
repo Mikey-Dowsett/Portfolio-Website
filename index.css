@@ -16,6 +16,7 @@ html {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
     max-width: 50%;
 }
 
@@ -72,6 +73,7 @@ html {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    text-align: r;
     max-width: 50%;
 }
 

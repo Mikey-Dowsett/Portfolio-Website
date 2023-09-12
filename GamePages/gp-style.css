@@ -80,8 +80,11 @@ body {
 }
 
 #projectgallery img {
-    max-width: 450px;
-    max-height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 45%;
+    padding-left: 90%;
     border-style: solid;
     border-color: #2D2C33;
     border-radius: 25px;
