@@ -1,0 +1,51 @@
+<div class="OtherGames">
+    <link rel="stylesheet" href="/OtherGames.css">
+
+    <script>
+        function GetRandom() {
+            var cells = document.getElementsByTagName("a");
+            var random = Math.floor(Math.random()*cells.length);
+            const shown = window.getComputedStyle(cells[random]).getPropertyValue('display');
+            console.log(shown);
+            if(shown == "none") {
+                cells[random].style.display = "block";
+            } else {
+                GetRandom();
+            }
+        }
+        
+        window.addEventListener("load", function(event) {
+            GetRandom();
+            GetRandom();
+            GetRandom();
+        });
+       
+    </script>
+
+    <div class="gallery">
+        <a class="gallery-cell" id="cell1" href="/GamePages/bouncyball.html" style="background-image: url('/Website Visuals/Bouncy-Ball-1.png');">
+            <div>Bouncy Ball</div>
+        </a>
+        <a class="gallery-cell" id="cell3" href="/GamePages/fightforearth.html" style="background-image: url('/Website Visuals/Fight-For-Earth-1.png');">
+            <div>Fight For Earth</div>
+        </a>
+        <a class="gallery-cell" id="cell2" href="/GamePages/mathsweeper.html" style="background-image: url('/Website Visuals/Math-Sweeper-1.png');">
+            <div>Math Sweeper</div>
+        </a>
+        <a class="gallery-cell" id="cell4" href="/GamePages/farmersapocalypse.html" style="background-image: url('/Website Visuals/Farmers-Apocalypse-1.png');">
+            <div>Farmers Apocalypse</div>
+        </a>
+        <a class="gallery-cell" id="cell5" href="/GamePages/thedrillers.html" style="background-image: url('/Website Visuals/The-Drillesr-1.png');">
+            <div>The Drillers</div>
+        </a>
+        <a class="gallery-cell" id="cell6" href="/GamePages/greekbrawl.html" style="background-image: url('/Website Visuals/Greek-Brawl-1.png');">
+            <div>Greek Brawl</div>
+        </a>
+        <a class="gallery-cell" id="cell7" href="/GamePages/mahara.html" style="background-image: url('/Website Visuals/Mahara-1.png');">
+            <div>Mahara</div>
+        </a>
+        <a class="gallery-cell" id="cell8" href="/GamePages/dwarfdash.html" style="background-image: url('/Website Visuals/Dwarf-Dash1.png');">
+            <div>Dwarf Dash</div>
+        </a>
+    </div>
+</div>
