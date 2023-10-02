@@ -82,22 +82,22 @@ html {
 
 @keyframes images {
     0% {
-        background-image: url("/Website Visuals/BouncyBallLogo.png")
+        background-image: url("/WebsiteVisuals/BouncyBallLogo.png")
     }
     20% {
-        background-image: url("/Website Visuals/Zues-vs-Cyclops.png")
+        background-image: url("/WebsiteVisuals/Zues-vs-Cyclops.png")
     }
     40% {
-        background-image: url("/Website Visuals/Dwarf Dash.png")
+        background-image: url("/WebsiteVisuals/Dwarf Dash.png")
     }
     60% {
-        background-image: url("/Website Visuals/Mahara.png")
+        background-image: url("/WebsiteVisuals/Mahara.png")
     }
     80% {
-        background-image: url("/Website Visuals/FarmersApocalypseLogo.png")
+        background-image: url("/WebsiteVisuals/FarmersApocalypseLogo.png")
     }
     100% {
-        background-image: url("/Website Visuals/BouncyBallLogo.png")
+        background-image: url("/WebsiteVisuals/BouncyBallLogo.png")
     }
 }
 
