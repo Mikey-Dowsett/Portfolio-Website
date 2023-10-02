@@ -13,7 +13,6 @@ html::-webkit-scrollbar {
     background-color: #2D2C33;
     display: flex;
     text-align: center;
-    padding-bottom: 5;
     height: 40px;
 }
 

@@ -23,7 +23,7 @@ html {
 .homeintro img {
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("Website Visuals/MikeyAlley.jpg");
+    background-image: url("WebsiteVisuals/MikeyAlley.jpg");
     border-radius: 50%;
     border-style: solid;
     border-color: #2D2C33;
@@ -38,10 +38,10 @@ html {
 .homeintro img:hover {
     background-position: center;
     background-repeat:no-repeat;
-    background-image: url("Website Visuals/MikeyBike.jpg");
+    background-image: url("WebsiteVisuals/MikeyBike.jpg");
 }
 
-#homebutton {
+.homebutton {
     font-family: 'Courier New', Courier, monospace;
     font-size: 100%;
     border: none;
@@ -55,7 +55,7 @@ html {
     transition: background-color 0.5s, transform 0.5s, color 0.5s;
 }
 
-#homebutton:hover {
+.homebutton:hover {
     background-color: #BB3030;
     color:#EEEBE0;
     transform: scale(1.1);
@@ -73,7 +73,6 @@ html {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    text-align: r;
     max-width: 50%;
 }
 
@@ -85,7 +84,7 @@ html {
 .projectdisplay img {
     background-position: center;
     background-repeat:no-repeat;
-    background-image: url("Website Visuals/Itch-Page.png");
+    background-image: url("WebsiteVisuals/Itch-Page.png");
     background-size: cover;
     border-radius: 50%;
     border-style: solid;
@@ -101,7 +100,7 @@ html {
     background-position: center;
     background-repeat:no-repeat;
     background-size: cover;
-    background-image: url("Website Visuals/Farmers-Apocalypse-1.png");
+    background-image: url("WebsiteVisuals/Farmers-Apocalypse-1.png");
 }
 
 .homeintro h1 {
