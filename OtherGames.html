@@ -9,7 +9,6 @@
                 var cells = document.getElementsByTagName("a");
                 var random = Math.floor(Math.random()*cells.length);
                 const shown = window.getComputedStyle(cells[random]).getPropertyValue('display');
-                console.log(shown);
                 if(shown == "none") {
                     cells[random].style.display = "block";
                 } else {
@@ -40,7 +39,7 @@
             <a class="gallery-cell" id="cell4" href="/GamePages/farmersapocalypse.html" style="background-image: url('/WebsiteVisuals/Farmers-Apocalypse-1.png');">
                 <div>Farmers Apocalypse</div>
             </a>
-            <a class="gallery-cell" id="cell5" href="/GamePages/thedrillers.html" style="background-image: url('/WebsiteVisuals/The-Drillesr-1.png');">
+            <a class="gallery-cell" id="cell5" href="/GamePages/thedrillers.html" style="background-image: url('/WebsiteVisuals/The-Drillers-1.png');">
                 <div>The Drillers</div>
             </a>
             <a class="gallery-cell" id="cell6" href="/GamePages/greekbrawl.html" style="background-image: url('/WebsiteVisuals/Greek-Brawl-1.png');">
