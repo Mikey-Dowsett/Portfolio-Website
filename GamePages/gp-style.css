@@ -67,6 +67,7 @@ body {
     margin-bottom: auto;
     margin-left: 50px;
     max-width: 60%;
+    padding-top: 15px;
 }
 
 #projectgallery {
@@ -98,6 +99,8 @@ body {
     pointer-events: none;
     margin-left: 45px;
     font-size: 200%;
+    padding-top: 50px;
+    padding-bottom: 15px;
 }
 
 @media screen and (max-width: 800px) {

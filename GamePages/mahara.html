@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Mahara</title>
+        <title id="pagetitle">Game Page</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="icon" href="/WebsiteVisuals/MikeyFace.jpg" type="image/ico">
         <meta charset="utf-8">
+        <link rel="icon" href="../WebsiteVisuals/MikeyFace.jpg" type="image/ico">
+        <link rel="stylesheet" href="gp-style.css">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <div id="header"></div>
+        <div id="projectface" style="background-image: url('/WebsiteVisuals/Bouncy-Ball-1.png');">            
+        </div>
+        
+        <h1 id="title">Game Page</h1>
+        <div id="projectstats">
+            <div id="toolsused">
+                <section>
+                    <div>
+                        <h2>Tools Used</h2>
+                        <p id="tools"></p>
+                    </div>
+                    <div>
+                        <h2>Date Published</h2>
+                        <p id="date"></p>
+                    </div>
+                </section>
+            </div>
+            <button id="link">Play Game</button>
+        </div>
+        <p id="description"></p>
+
+        <div id="projectgallery">
+            <img id="img1" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+            <img id="img2" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+            <img id="img3" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+        </div>
+
+        <h2 id="carouseltitle">Check Out My Other Games</h2>
+        <div id="carousel"></div>
+        <div id="footer"></div>
+
         <script>
+            async function loadGames() {
+                var gameID = 6;
+                const response = await fetch("./games.json");
+                const games = await response.json();
+    
+                document.getElementById("pagetitle").innerHTML = games.games[gameID].title;
+                document.getElementById("title").innerHTML = games.games[gameID].title;
+                document.getElementById("tools").innerHTML = games.games[gameID].tools;
+                document.getElementById("date").innerHTML = games.games[gameID].date;
+                document.getElementById("description").innerHTML = games.games[gameID].description;
+                document.getElementById("link").onclick = function(){window.open(games.games[gameID].link, '_blank')};
+    
+                document.getElementById("projectface").style.backgroundImage = 'url('+games.games[gameID].background+')';
+                document.getElementById("img1").style.backgroundImage = 'url('+games.games[gameID].img1+')';
+                document.getElementById("img2").style.backgroundImage = 'url('+games.games[gameID].img2+')';
+                document.getElementById("img3").style.backgroundImage = 'url('+games.games[gameID].img3+')';
+            }
+            loadGames();
+    
             $(function() {
                 $('#header').load('/header.html')
             });
@@ -19,52 +74,5 @@
                 $('#footer').load('/footer.html')
             });
         </script>
-        <link rel="stylesheet" href="gp-style.css">
-    </head>
-    <body>
-        <div id="header"></div>
-        <br>
-        <div id="projectface" style="background-image: url('/WebsiteVisuals/Mahara-1.png');">            
-        </div>
-        <br>
-        <h1 id="title">Mahara</h1>
-        <div id="projectstats">
-            <div id="toolsused">
-                <section>
-                    <div>
-                        <h2>Tools Used</h2>
-                        <p>Unity, Aseprite, BFXR, Bosca Ceoil</p>
-                    </div>
-                    <div>
-                        <h2>Date Published</h2>
-                        <p>June 2021</p>
-                    </div>
-                </section>
-            </div>
-            <button onclick="window.open('https://silver-kiwi-games.itch.io/mahara', '_blank')">Play Game</button>
-        </div>
-        <br>
-        <p id="description">
-            Mahara was made in three days for the MashUp Game Jam 2 with the theme "Unconventional Means". 
-            This was my first game jam so I decided to keep it simple by making a platformer. 
-            I had the game fit the theme by switching the gravity instead of jumping. 
-            I also created floors you can't touch, enemies that walk back and forth, and an enemy that shoots projectiles. 
-            While the game mechanics had potential, I was still new to making games without following tutorials at the time, so the difficulty was very inconsistent. 
-            The sounds aren't very good and don't fit with the art style. 
-            The art is also inconsistent with itself, the player is far more detailed than the environment, and the background isn't even pixel art. 
-            I learned a lot from the game though, especially about planning games and making them quickly.
-        </p>
-
-        <br>
-        <div id="projectgallery">
-            <img style="background-image: url('/WebsiteVisuals/Mahara.gif');" src="" alt="">
-            <img style="background-image: url('/WebsiteVisuals/Mahara-2.png');" src="" alt="">
-            <img style="background-image: url('/WebsiteVisuals/Mahara-3.png');" src="" alt="">
-        </div>
-        <br>
-        <h2 id="carouseltitle">Check Out My Other Games</h2>
-        <div id="carousel"></div>
-        <br>
-        <div id="footer"></div>
     </body>
 </html>

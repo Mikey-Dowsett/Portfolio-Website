@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Dwarf Dash</title>
+        <title id="pagetitle">Game Page</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="icon" href="/WebsiteVisuals/MikeyFace.jpg" type="image/ico">
         <meta charset="utf-8">
+        <link rel="icon" href="../WebsiteVisuals/MikeyFace.jpg" type="image/ico">
+        <link rel="stylesheet" href="gp-style.css">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <div id="header"></div>
+        <div id="projectface" style="background-image: url('/WebsiteVisuals/Bouncy-Ball-1.png');">            
+        </div>
+        
+        <h1 id="title">Game Page</h1>
+        <div id="projectstats">
+            <div id="toolsused">
+                <section>
+                    <div>
+                        <h2>Tools Used</h2>
+                        <p id="tools"></p>
+                    </div>
+                    <div>
+                        <h2>Date Published</h2>
+                        <p id="date"></p>
+                    </div>
+                </section>
+            </div>
+            <button id="link">Play Game</button>
+        </div>
+        <p id="description"></p>
+
+        <div id="projectgallery">
+            <img id="img1" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+            <img id="img2" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+            <img id="img3" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+        </div>
+
+        <h2 id="carouseltitle">Check Out My Other Games</h2>
+        <div id="carousel"></div>
+        <div id="footer"></div>
+
         <script>
+            async function loadGames() {
+                var gameID = 7;
+                const response = await fetch("./games.json");
+                const games = await response.json();
+    
+                document.getElementById("pagetitle").innerHTML = games.games[gameID].title;
+                document.getElementById("title").innerHTML = games.games[gameID].title;
+                document.getElementById("tools").innerHTML = games.games[gameID].tools;
+                document.getElementById("date").innerHTML = games.games[gameID].date;
+                document.getElementById("description").innerHTML = games.games[gameID].description;
+                document.getElementById("link").onclick = function(){window.open(games.games[gameID].link, '_blank')};
+    
+                document.getElementById("projectface").style.backgroundImage = 'url('+games.games[gameID].background+')';
+                document.getElementById("img1").style.backgroundImage = 'url('+games.games[gameID].img1+')';
+                document.getElementById("img2").style.backgroundImage = 'url('+games.games[gameID].img2+')';
+                document.getElementById("img3").style.backgroundImage = 'url('+games.games[gameID].img3+')';
+            }
+            loadGames();
+    
             $(function() {
                 $('#header').load('/header.html')
             });
@@ -19,52 +74,5 @@
                 $('#footer').load('/footer.html')
             });
         </script>
-        <link rel="stylesheet" href="gp-style.css">
-    </head>
-    <body>
-        <div id="header"></div>
-        <br>
-        <div id="projectface" style="background-image: url('/WebsiteVisuals/Dwarf-Dash1.png');">            
-        </div>
-        <br>
-        <h1 id="title">Dwarf Dash</h1>
-        <div id="projectstats">
-            <div id="toolsused">
-                <section>
-                    <div>
-                        <h2>Tools Used</h2>
-                        <p>Unity, Photoshop</p>
-                    </div>
-                    <div>
-                        <h2>Date Published</h2>
-                        <p>January 2020</p>
-                    </div>
-                </section>
-            </div>
-            <button onclick="window.open('https://silver-kiwi-games.itch.io/dwarf-dash', '_blank')">Play Game</button>
-        </div>
-        <br>
-        <p id="description">
-            Dwarf Dash is a recreation of the first game, but still one of my first projects. 
-            I made it while following a tutorial by BlackThornProd. 
-            It is very similar to the original but I added the ability to unlock new characters and backgrounds. 
-            The gameplay is very simple, avoid the falling boulders for as long as you can. 
-            Some shields fall occasionally giving you one free hit from a boulder. 
-            The longer you last the more points you get, which can be used to unlock the other characters and backgrounds. 
-            Each character has slightly different heights and speeds, giving each their own advantage and disadvantage. 
-            This is one of my first games, and it shows. The UI is very simple and doesn't look good, and the gameplay is very clunky.
-        </p>
-
-        <br>
-        <div id="projectgallery">
-            <img style="background-image: url('/WebsiteVisuals/Dwarf-Dash.gif');" src="" alt="">
-            <img style="background-image: url('/WebsiteVisuals/Dwarf-Dash-2.png');" src="" alt="">
-            <img style="background-image: url('/WebsiteVisuals/Dwarf-Dash-3.png');" src="" alt="">
-        </div>
-        <br>
-        <h2 id="carouseltitle">Check Out My Other Games</h2>
-        <div id="carousel"></div>
-        <br>
-        <div id="footer"></div>
     </body>
 </html>

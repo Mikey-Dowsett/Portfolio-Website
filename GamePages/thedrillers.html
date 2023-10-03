@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>The Drillers</title>
+        <title id="pagetitle">Game Page</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="icon" href="/WebsiteVisuals/MikeyFace.jpg" type="image/ico">
         <meta charset="utf-8">
+        <link rel="icon" href="../WebsiteVisuals/MikeyFace.jpg" type="image/ico">
+        <link rel="stylesheet" href="gp-style.css">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <div id="header"></div>
+        <div id="projectface" style="background-image: url('/WebsiteVisuals/Bouncy-Ball-1.png');">            
+        </div>
+        
+        <h1 id="title">Game Page</h1>
+        <div id="projectstats">
+            <div id="toolsused">
+                <section>
+                    <div>
+                        <h2>Tools Used</h2>
+                        <p id="tools"></p>
+                    </div>
+                    <div>
+                        <h2>Date Published</h2>
+                        <p id="date"></p>
+                    </div>
+                </section>
+            </div>
+            <button id="link">Play Game</button>
+        </div>
+        <p id="description"></p>
+
+        <div id="projectgallery">
+            <img id="img1" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+            <img id="img2" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+            <img id="img3" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+        </div>
+
+        <h2 id="carouseltitle">Check Out My Other Games</h2>
+        <div id="carousel"></div>
+        <div id="footer"></div>
+
         <script>
+            async function loadGames() {
+                var gameID = 4;
+                const response = await fetch("./games.json");
+                const games = await response.json();
+    
+                document.getElementById("pagetitle").innerHTML = games.games[gameID].title;
+                document.getElementById("title").innerHTML = games.games[gameID].title;
+                document.getElementById("tools").innerHTML = games.games[gameID].tools;
+                document.getElementById("date").innerHTML = games.games[gameID].date;
+                document.getElementById("description").innerHTML = games.games[gameID].description;
+                document.getElementById("link").onclick = function(){window.open(games.games[gameID].link, '_blank')};
+    
+                document.getElementById("projectface").style.backgroundImage = 'url('+games.games[gameID].background+')';
+                document.getElementById("img1").style.backgroundImage = 'url('+games.games[gameID].img1+')';
+                document.getElementById("img2").style.backgroundImage = 'url('+games.games[gameID].img2+')';
+                document.getElementById("img3").style.backgroundImage = 'url('+games.games[gameID].img3+')';
+            }
+            loadGames();
+    
             $(function() {
                 $('#header').load('/header.html')
             });
@@ -19,50 +74,5 @@
                 $('#footer').load('/footer.html')
             });
         </script>
-        <link rel="stylesheet" href="gp-style.css">
-    </head>
-    <body>
-        <div id="header"></div>
-        <br>
-        <div id="projectface" style="background-image: url('/WebsiteVisuals/The-Drillers-1.png');">            
-        </div>
-        <br>
-        <h1 id="title">The Drillers</h1>
-        <div id="projectstats">
-            <div id="toolsused">
-                <section>
-                    <div>
-                        <h2>Tools Used</h2>
-                        <p>Unity, Aseprite, BFXR</p>
-                    </div>
-                    <div>
-                        <h2>Date Published</h2>
-                        <p>August 2022</p>
-                    </div>
-                </section>
-            </div>
-            <button onclick="window.open('https://silver-kiwi-games.itch.io/the-drillers', '_blank')">Play Game</button>
-        </div>
-        <br>
-        <p id="description">
-            The Drillers was a small game I made inspired by the gameplay of Dome Keeper. 
-            The objective of the game is to dig deeper and deeper harvesting rare and valuable gems. 
-            The player can then sell the gems to upgrade themselves and unlock deeper layers. 
-            It's a very simple game, but I tried to create a more distinct look for the game with post-processing. 
-            I used Grain and Panini Projection to give the game a more retro feel that works with pixel art and 8-bit sound effects. 
-            I also tried to create a more immersive environment by adding rain to the surface that gets quieter the deeper you dig.
-        </p>
-
-        <br>
-        <div id="projectgallery">
-            <img style="background-image: url('/WebsiteVisuals/The-Drillers.gif');" src="" alt="">
-            <img style="background-image: url('/WebsiteVisuals/The-Drillers-2.png');" src="" alt="">
-            <img style="background-image: url('/WebsiteVisuals/The-Drillers-3.png');" src="" alt="">
-        </div>
-        <br>
-        <h2 id="carouseltitle">Check Out My Other Games</h2>
-        <div id="carousel"></div>
-        <br>
-        <div id="footer"></div>
     </body>
 </html>

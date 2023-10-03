@@ -41,6 +41,7 @@
 
 .flickity-page-dots {
     position: relative;
+    padding-bottom: 20px;
 }
 
 .flickity-page-dots .dot{

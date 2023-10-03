@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Fight for Earth</title>
+        <title id="pagetitle">Game Page</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="icon" href="/WebsiteVisuals/MikeyFace.jpg" type="image/ico">
         <meta charset="utf-8">
+        <link rel="icon" href="../WebsiteVisuals/MikeyFace.jpg" type="image/ico">
+        <link rel="stylesheet" href="gp-style.css">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <div id="header"></div>
+        <div id="projectface" style="background-image: url('/WebsiteVisuals/Bouncy-Ball-1.png');">            
+        </div>
+        
+        <h1 id="title">Game Page</h1>
+        <div id="projectstats">
+            <div id="toolsused">
+                <section>
+                    <div>
+                        <h2>Tools Used</h2>
+                        <p id="tools"></p>
+                    </div>
+                    <div>
+                        <h2>Date Published</h2>
+                        <p id="date"></p>
+                    </div>
+                </section>
+            </div>
+            <button id="link">Play Game</button>
+        </div>
+        <p id="description"></p>
+
+        <div id="projectgallery">
+            <img id="img1" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+            <img id="img2" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+            <img id="img3" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+        </div>
+
+        <h2 id="carouseltitle">Check Out My Other Games</h2>
+        <div id="carousel"></div>
+        <div id="footer"></div>
+
         <script>
+            async function loadGames() {
+                var gameID = 1;
+                const response = await fetch("./games.json");
+                const games = await response.json();
+    
+                document.getElementById("pagetitle").innerHTML = games.games[gameID].title;
+                document.getElementById("title").innerHTML = games.games[gameID].title;
+                document.getElementById("tools").innerHTML = games.games[gameID].tools;
+                document.getElementById("date").innerHTML = games.games[gameID].date;
+                document.getElementById("description").innerHTML = games.games[gameID].description;
+                document.getElementById("link").onclick = function(){window.open(games.games[gameID].link, '_blank')};
+    
+                document.getElementById("projectface").style.backgroundImage = 'url('+games.games[gameID].background+')';
+                document.getElementById("img1").style.backgroundImage = 'url('+games.games[gameID].img1+')';
+                document.getElementById("img2").style.backgroundImage = 'url('+games.games[gameID].img2+')';
+                document.getElementById("img3").style.backgroundImage = 'url('+games.games[gameID].img3+')';
+            }
+            loadGames();
+    
             $(function() {
                 $('#header').load('/header.html')
             });
@@ -19,50 +74,5 @@
                 $('#footer').load('/footer.html')
             });
         </script>
-        <link rel="stylesheet" href="gp-style.css">
-    </head>
-    <body>
-        <div id="header"></div>
-        <br>
-        <div id="projectface" style="background-image: url('/WebsiteVisuals/Fight-For-Earth-1.png');">            
-        </div>
-        <br>
-        <h1 id="title">Fight for Earth</h1>
-        <div id="projectstats">
-            <div id="toolsused">
-                <section>
-                    <div>
-                        <h2>Tools Used</h2>
-                        <p>Unity, Aseprite</p>
-                    </div>
-                    <div>
-                        <h2>Date Published</h2>
-                        <p>February 2023</p>
-                    </div>
-                </section>
-            </div>
-            <button onclick="window.open('https://silver-kiwi-games.itch.io/fight-for-earth', '_blank')">Play Game</button>
-        </div>
-        <br>
-        <p id="description">
-            Fight for Earth was made in 7 days for the Brackeys Game Jam 2023.1 with the theme "An end is a new beginning". 
-            My game loosey fits this theme by starting you as a different character each time. 
-            It is a short wave-based shooter game where you have to kill incoming zombies until the timer runs out. 
-            When the game starts you are randomly given one of three possible gun types. 
-            As you kill zombies you gain XP to upgrade your character, with certain upgrades being better for each type. 
-            By completing this project I learned how to create an upgrade system that affects different stats while trying to keep the game balanced.
-        </p>
-
-        <br>
-        <div id="projectgallery">
-            <img style="background-image: url('/WebsiteVisuals/Fight-For-Earth.gif');" src="" alt="">
-            <img style="background-image: url('/WebsiteVisuals/Fight-For-Earth-2.png');" src="" alt="">
-            <img style="background-image: url('/WebsiteVisuals/Fight-For-Earth-3.png');" src="" alt="">
-        </div>
-        <br>
-        <h2 id="carouseltitle">Check Out My Other Games</h2>
-        <div id="carousel"></div>
-        <br>
-        <div id="footer"></div>
     </body>
 </html>

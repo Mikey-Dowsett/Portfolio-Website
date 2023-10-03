@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Greek Brawl</title>
+        <title id="pagetitle">Game Page</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="icon" href="/WebsiteVisuals/MikeyFace.jpg" type="image/ico">
         <meta charset="utf-8">
+        <link rel="icon" href="../WebsiteVisuals/MikeyFace.jpg" type="image/ico">
+        <link rel="stylesheet" href="gp-style.css">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <div id="header"></div>
+        <div id="projectface" style="background-image: url('/WebsiteVisuals/Bouncy-Ball-1.png');">            
+        </div>
+        
+        <h1 id="title">Game Page</h1>
+        <div id="projectstats">
+            <div id="toolsused">
+                <section>
+                    <div>
+                        <h2>Tools Used</h2>
+                        <p id="tools"></p>
+                    </div>
+                    <div>
+                        <h2>Date Published</h2>
+                        <p id="date"></p>
+                    </div>
+                </section>
+            </div>
+            <button id="link">Play Game</button>
+        </div>
+        <p id="description"></p>
+
+        <div id="projectgallery">
+            <img id="img1" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+            <img id="img2" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+            <img id="img3" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+        </div>
+
+        <h2 id="carouseltitle">Check Out My Other Games</h2>
+        <div id="carousel"></div>
+        <div id="footer"></div>
+
         <script>
+            async function loadGames() {
+                var gameID = 5;
+                const response = await fetch("./games.json");
+                const games = await response.json();
+    
+                document.getElementById("pagetitle").innerHTML = games.games[gameID].title;
+                document.getElementById("title").innerHTML = games.games[gameID].title;
+                document.getElementById("tools").innerHTML = games.games[gameID].tools;
+                document.getElementById("date").innerHTML = games.games[gameID].date;
+                document.getElementById("description").innerHTML = games.games[gameID].description;
+                document.getElementById("link").onclick = function(){window.open(games.games[gameID].link, '_blank')};
+    
+                document.getElementById("projectface").style.backgroundImage = 'url('+games.games[gameID].background+')';
+                document.getElementById("img1").style.backgroundImage = 'url('+games.games[gameID].img1+')';
+                document.getElementById("img2").style.backgroundImage = 'url('+games.games[gameID].img2+')';
+                document.getElementById("img3").style.backgroundImage = 'url('+games.games[gameID].img3+')';
+            }
+            loadGames();
+    
             $(function() {
                 $('#header').load('/header.html')
             });
@@ -19,52 +74,5 @@
                 $('#footer').load('/footer.html')
             });
         </script>
-        <link rel="stylesheet" href="gp-style.css">
-    </head>
-    <body>
-        <div id="header"></div>
-        <br>
-        <div id="projectface" style="background-image: url('/WebsiteVisuals/Greek-Brawl-1.png');">            
-        </div>
-        <br>
-        <h1 id="title">Greek Brawl</h1>
-        <div id="projectstats">
-            <div id="toolsused">
-                <section>
-                    <div>
-                        <h2>Tools Used</h2>
-                        <p>Unity, Aseprite</p>
-                    </div>
-                    <div>
-                        <h2>Date Published</h2>
-                        <p>February 2022</p>
-                    </div>
-                </section>
-            </div>
-            <button onclick="window.open('https://silver-kiwi-games.itch.io/greek-brawl', '_blank')">Play Game</button>
-        </div>
-        <br>
-        <p id="description">
-            Greek Brawl was my attempt at a simple turn-based game. At the start of the game, the player and AI are given four randomly selected characters. 
-            The player plays as the gods, while the AI plays as monsters. Each character has attack damage, an accuracy chance, and a special ability. 
-            The special ability is charged up by attacking and getting hit. 
-            Each character also falls into one of six classes, each one of which does critical damage to another class. 
-            My main focus while working on this project was the systems, creating the AI for the enemy to give it a good chance of winning. 
-            As well as the turn-based system that kept track of all the characters. 
-            The art and sound effects did not match up well, and the UI was very clunky. 
-            This project was much more of a technical piece than a visual and it shows.
-        </p>
-
-        <br>
-        <div id="projectgallery">
-            <img style="background-image: url('/WebsiteVisuals/Greek-Brawl.gif');" src="" alt="">
-            <img style="background-image: url('/WebsiteVisuals/Greek-Brawl-2.png');" src="" alt="">
-            <img style="background-image: url('/WebsiteVisuals/Greek-Brawl-3.png');" src="" alt="">
-        </div>
-        <br>
-        <h2 id="carouseltitle">Check Out My Other Games</h2>
-        <div id="carousel"></div>
-        <br>
-        <div id="footer"></div>
     </body>
 </html>
