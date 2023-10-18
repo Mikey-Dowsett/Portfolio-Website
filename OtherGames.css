@@ -9,7 +9,6 @@
     background-image: linear-gradient(to right, #0F0E11, #2D2C33, #0F0E11);
     background: linear-gradient(to right, #0F0E11, #2D2C33, #0F0E11) padding-box,
               linear-gradient(to right, #BB3030, #EEEBE0, #BB3030) border-box;
-    border-radius: 50em;
     border: 4px solid transparent;
     border-radius: 25px;
     margin-bottom: 45px;
