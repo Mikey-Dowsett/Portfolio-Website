@@ -15,13 +15,11 @@ html {
 
 .portfolio img {
     width: 75%;
-    max-height: 75%;
     border-style: solid;
     border-color: #2D2C33;
     border-radius: 25px;
     margin-top: auto;
     margin-bottom: auto;
-
     transition: border-color 0.5s, transform 0.5s;
 }
 
@@ -50,7 +48,6 @@ html {
 }
 
 #description {
-    display: flex;
     text-align: center;
     pointer-events: none;
     padding-top: 20px;
@@ -63,51 +60,12 @@ html {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    max-width: 50%;
-}
-
-#description img {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 5%;
-    border-style: solid;
-    border-color: #2D2C33;
-    margin-left: -5%;
-    margin-right: auto;
-
-    padding: 175px;
-    animation: images 10s infinite;
-}
-
-@keyframes images {
-    0% {
-        background-image: url("/WebsiteVisuals/BouncyBallLogo.png")
-    }
-    20% {
-        background-image: url("/WebsiteVisuals/Zues-vs-Cyclops.png")
-    }
-    40% {
-        background-image: url("/WebsiteVisuals/Dwarf Dash.png")
-    }
-    60% {
-        background-image: url("/WebsiteVisuals/Mahara.png")
-    }
-    80% {
-        background-image: url("/WebsiteVisuals/FarmersApocalypseLogo.png")
-    }
-    100% {
-        background-image: url("/WebsiteVisuals/BouncyBallLogo.png")
-    }
+    max-width: 85%;
 }
 
 @media screen and  (max-width: 800px) {
     .portfolio {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    #description img {
-        display: none;
     }
 
     #description div {
