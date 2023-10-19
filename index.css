@@ -193,6 +193,7 @@ html {
         text-align: center;
         margin: 0 auto;
         padding: 0;
+        border: 1px dashed red;
     }
 
     .homeintro div {
@@ -201,10 +202,9 @@ html {
     }
 
     .homeintro img {
-        position: relative;
+        background-size: cover;
+        padding: 35%;
         pointer-events: none;
-        transform: scale(0.8);
-        margin: 0 auto;
     }
 
     .projectdisplay {
