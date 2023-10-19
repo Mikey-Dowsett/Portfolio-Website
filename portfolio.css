@@ -64,8 +64,11 @@ html {
 }
 
 @media screen and  (max-width: 800px) {
-    html {
+    html, body {
         overflow-x: hidden;
+    }
+    body {
+        position: relative;
     }
     .portfolio {
         grid-template-columns: repeat(2, 1fr);
