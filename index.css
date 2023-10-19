@@ -193,7 +193,6 @@ html {
         text-align: center;
         margin: 0 auto;
         padding: 0;
-        border: 1px dashed red;
     }
 
     .homeintro div {
@@ -203,7 +202,7 @@ html {
 
     .homeintro img {
         background-size: cover;
-        padding: 35%;
+        padding: 45%;
         pointer-events: none;
     }
 
