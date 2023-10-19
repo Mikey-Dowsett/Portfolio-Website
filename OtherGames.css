@@ -6,7 +6,6 @@
 }
 
 .ogall {
-    background-image: linear-gradient(to right, #0F0E11, #2D2C33, #0F0E11);
     background: linear-gradient(to right, #0F0E11, #2D2C33, #0F0E11) padding-box,
               linear-gradient(to right, #BB3030, #EEEBE0, #BB3030) border-box;
     border: 4px solid transparent;
@@ -89,4 +88,37 @@
 
 .ogtitle a:hover {
     color: #BB3030;
+}
+
+@media screen and (max-width: 800px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+        margin-bottom: 0px;
+        padding-bottom: 10px;
+        
+    }
+
+    .gallery-cell img {
+        width: 90%;
+        height: 300px;
+    }
+
+    .gallery div {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        background-color: #0F0E11;
+        
+        top: 40px;
+        font-size: xx-large;
+        position: relative;
+        /* margin-top: 0px; */
+        border-radius: 20px 20px 0 0;
+    }
+
+    .ogall {
+        background: linear-gradient(to bottom, #0F0E11, #2D2C33, #0F0E11) padding-box,
+                  linear-gradient(to bottom, #BB3030, #EEEBE0, #BB3030) border-box;
+    }
 }
