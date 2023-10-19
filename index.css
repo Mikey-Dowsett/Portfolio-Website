@@ -116,6 +116,7 @@ html {
 }
 
 .projectdisplay p {
+    text-align: left;
     pointer-events: none;
 }
 
@@ -144,7 +145,7 @@ html {
 
 .gallery_img:hover {
     border-color: #EEEBE0;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .gallary__item--1 {
