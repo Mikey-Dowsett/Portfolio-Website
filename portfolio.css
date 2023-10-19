@@ -14,7 +14,8 @@ html {
 }
 
 .portfolio img {
-    width: 75%;
+    /* width: 75%; */
+    height: 60%;
     border-style: solid;
     border-color: #2D2C33;
     border-radius: 25px;
@@ -31,7 +32,7 @@ html {
 .portfolio h2 {
     text-align: left;
     margin-left: 15%;
-    margin-right: auto;
+    margin-right: 15%;
 }
 
 .portfolio a {
@@ -39,12 +40,18 @@ html {
 }
 
 .portfolio a h2 {
+    text-align: center;
     color: #EEEBE0;
     transition: color 0.5s;
 }
 
 .portfolio a h2:hover {
     color: #BB3030;
+}
+
+.portfolio section {
+    height: 250px;
+    /* border: 1px dashed lightcoral; */
 }
 
 #description {
@@ -63,7 +70,7 @@ html {
     max-width: 85%;
 }
 
-@media screen and  (max-width: 800px) {
+@media screen and  (max-width: 900px) {
     html, body {
         overflow-x: hidden;
     }
@@ -79,7 +86,7 @@ html {
     }
 }
 
-@media screen and  (max-width: 500px) {
+@media screen and  (max-width: 600px) {
     .portfolio {
         grid-template-columns: repeat(1, 1fr);
     }
